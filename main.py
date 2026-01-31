@@ -11,7 +11,8 @@ class Payload(BaseModel):
 
 HF_API_KEY = os.getenv("HF_API_KEY")
 HF_MODEL = "mistralai/Mistral-7B-Instruct-v0.2"
-HF_URL = f"https://api-inference.huggingface.co/models/{HF_MODEL}"
+HF_URL = f"https://router.huggingface.co/models/{HF_MODEL}"
+
 
 @app.get("/health")
 def health():
