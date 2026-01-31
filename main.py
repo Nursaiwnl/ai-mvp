@@ -12,7 +12,8 @@ app = FastAPI()
 
 HF_API_KEY = os.getenv("HF_API_KEY")
 HF_CHAT_URL = "https://router.huggingface.co/v1/chat/completions"
-HF_MODEL = "mistralai/Mistral-7B-Instruct-v0.2"
+HF_MODEL = "HuggingFaceH4/zephyr-7b-beta"
+
 
 # =========================
 # MODELS
