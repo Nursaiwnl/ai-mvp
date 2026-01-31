@@ -8,7 +8,8 @@ app = FastAPI()
 
 HF_API_KEY = os.getenv("HF_API_KEY")
 HF_MODEL = "google/flan-t5-large"
-HF_URL = f"https://router.huggingface.co/models/{HF_MODEL}"
+HF_URL = f"https://router.huggingface.co/hf-inference/models/{HF_MODEL}"
+
 
 class Payload(BaseModel):
     data: str
